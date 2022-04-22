@@ -9,4 +9,3 @@ print('Your favorite food is ' + favoriteFood + '!')
 
 favoriteSport = input("What is your favorite sport?")
 print('Your favorite sport is ' + favoriteSport + '!')
-s
