@@ -13,5 +13,9 @@ C = float(input('Drag constant (0.5 for sphere, 1.1 for cylinder: '))
 c = .5 * p * A * C
 
 
-v = (math.sqrt(m*g/c)) * (1 - (math.e)**(-(math.sqrt(m*g*c))/m)*t)
-print(v)
+v = math.sqrt(m * g / c) * (1 - math.exp((-math.sqrt(m * g * c) / m) * t))
+
+print()
+print(f"The inner value of c is: {c:.3f}")
+print(f"The velocity after {t} seconds is: {v:.3f} m/s")
+
