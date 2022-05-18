@@ -1,38 +1,38 @@
 import math
 
-grade_in = float(input('What is your grade (0-100)?: '))
-grade = 'A+'
+grade_in = float(input('What is your letter (0-100)?: '))
+letter = 'A'
 if grade_in >= 97:
-    grade = 'A+'
+    letter = 'A'
 elif grade_in < 97 and grade_in >= 93:
-    grade = 'A'
+    letter = 'A'
 elif grade_in < 93 and grade_in >= 90:
-    grade = 'A-'
+    letter = 'A-'
 elif grade_in < 90 and grade_in >= 87:
-    grade = 'B+'
+    letter = 'B+'
 elif grade_in < 87 and grade_in >= 83:
-    grade = 'B'
+    letter = 'B'
 elif grade_in < 83 and grade_in >= 80:
-    grade = 'B-'
+    letter = 'B-'
 elif grade_in < 80 and grade_in >= 77:
-    grade = 'C+'
+    letter = 'C+'
 elif grade_in < 77 and grade_in >= 73:
-    grade = 'C'
+    letter = 'C'
 elif grade_in < 73 and grade_in >= 70:
-    grade = 'C-'
+    letter = 'C-'
 elif grade_in < 70 and grade_in >= 67:
-    grade = 'D+'
+    letter = 'D+'
 elif grade_in < 67 and grade_in >= 63:
-    grade = 'D'
+    letter = 'D'
 elif grade_in < 63 and grade_in >= 60:
-    grade = 'D-'
-elif grade_in < 60 and grade_in >= 57:
-    grade = 'F+'
-elif grade_in < 57 and grade_in >= 53:
-    grade = 'F'
-elif grade_in < 53:
-    grade = 'F-'
-else:
-    print('Invalid Input')
+    letter = 'D-'
+elif grade_in < 60:
+    letter = 'F'
 
-print(f'You have a {grade}')
+    
+print(f'Grade: {letter}')
+if grade_in >= 70:
+    print('You passed the class!')
+else:
+    print('You failed the class but you can always try again.')
+
