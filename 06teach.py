@@ -11,6 +11,10 @@ if second_rider == 'yes':
     if age_two >= 18 or age_one >= 18:
         if height_one >= 36 and height_two >= 36:
             print('Welcome to the ride. Please be safe and have fun!')
+    elif age_one >= 12 and age_two >= 12:
+        if height_one >= 52 and height_two >= 52:
+            print('Welcome to the ride. Please be safe and have fun!')
+    
 else:
     print('Sorry, you may not ride.')
 
