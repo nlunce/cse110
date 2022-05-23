@@ -28,25 +28,25 @@ elif decision1.lower() == 'stay':
 if decision2.lower() == 'fight':
     decision3 = input('You underestimated the homeless man and as he gets closer you realize he is a huge brute of a man. You are weaponless where as he has a baseball bat.\nThe homeless man beats you and Rowley up and leaves.\nDo you SHOUT for help or tell Rowley to CALL an ambulance?\nSHOUT or CALL: ')
 
-    while decision3.lower() != 'shout' and decision2.lower() != 'call':
+    while decision3.lower() != 'shout' and decision3.lower() != 'call':
         decision3 = input('IMPROPER INPUT\nSHOUT or CALL: ')
 
 elif decision2.lower() == 'run':
     decision3 = input('You and Rowley run and make it to safety. Rowley asks you if you want to have a TICKLE FIGHT or NOT.\nTICKLE FIGHT or NOT: ')
 
-    while decision3.lower() != 'tickle fight' and decision2.lower() != 'not':
+    while decision3.lower() != 'tickle fight' and decision3.lower() != 'not':
         decision3 = input('IMPROPER INPUT\nTICKLE FIGHT or NOT: ')
 
 elif decision2.lower() == 'open':
     decision3 = input('You open the door for the homeless man and he is greatful for you compassion on him. He enlightens you with stories of the Vietnam war.\nThe homeless man offers you drugs. Do you TAKE or DENY them?\nTAKE or DENY: ')
 
-    while decision3.lower() != 'take' and decision2.lower() != 'deny':
+    while decision3.lower() != 'take' and decision3.lower() != 'deny':
         decision3 = input('IMPROPER INPUT\nTAKE or DENY: ')
 
 elif decision2.lower() == 'refuse':
-    decision3 = input('You refuse to open the door for the homeless man and he becomes agressive. He pulls out a baseball bat and breakes down the door. Do you HIDE or try to TALK to him?\nHIDE or TALk: ')
+    decision3 = input('You refuse to open the door for the homeless man and he becomes agressive. He pulls out a baseball bat and breakes down the door. Do you HIDE or try to TALK to him?\nHIDE or TALK: ')
 
-    while decision3.lower() != 'hide' and decision2.lower() != 'talk':
+    while decision3.lower() != 'hide' and decision3.lower() != 'talk':
         decision3 = input('IMPROPER INPUT\nHIDE or TALK: ')
 
 
