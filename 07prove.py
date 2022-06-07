@@ -4,7 +4,7 @@ import math
 def main():
     word_picker_function()
     global guess
-    list_hint = ['_' for q in range(len(secret_word))]
+    list_hint = ['_ ' for q in range(len(secret_word))]
     string_hint = (''.join(list_hint))
     guess_counter = 0
     
@@ -13,20 +13,22 @@ def main():
     guess = input('What is your guess?: ')
     guess_counter += 1
 
-   
-
     while guess != secret_word:
         print('Your guess was not correct.')
         
         if len(guess) > len(secret_word):
             interim_secret_word_function()
-            interim_hint = ['_' for i in range(len(guess))]
+            list_interim_hint = ['_' for i in range(len(guess))]
             for i, letter in enumerate(guess):
                 if letter == interim_secret_word[i]:
-                    interim_hint[i] = letter.upper()
+                    list_interim_hint[i] = letter.upper()
                 elif letter in interim_secret_word:
-                    interim_hint[i] = letter.lower()
-            interim_string_hint = (''.join(interim_hint))
+                    list_interim_hint[i] = letter.lower()
+
+            for i in range(len(list_interim_hint)):
+                list_interim_hint.insert(2 * i + 1, ' ')
+            
+            interim_string_hint = (''.join(list_interim_hint))
             print(f'Your hint is {interim_string_hint}')
             guess = input('What is your guess?: ')
             guess_counter += 1
@@ -38,9 +40,12 @@ def main():
                     list_hint[i] = letter.upper()
                 elif letter in secret_word:
                     list_hint[i] = letter.lower()
-            string_hint = (''.join(list_hint))
-                
-            print(f'Your hint is {string_hint}')
+            
+            for i in range(len(list_hint)):
+                list_hint.insert(2 * i + 1, ' ')
+            
+            string_hint = (''.join(list_hint)) 
+            print(f'Your hint is: {string_hint}')
             guess = input('What is your guess?: ')
             guess_counter += 1
 
@@ -51,12 +56,12 @@ def main():
         print('Thank you for playing!')
 
 
-
 def word_picker_function():
     global secret_word
     secret_word_list = ['fortnite', 'cheese', 'dinosaur', 'chicken', 'pickle', 'computer', 'rainbow', 'remember', 'desktop', 'finger', 'alien']
     word_picker = random.randint(0,10)
     secret_word = secret_word_list[word_picker]
+
 
 def interim_secret_word_function():
     global interim_secret_word
