@@ -1,7 +1,10 @@
-experiment = [1, 2, 3, 4, 5]
-count = len(experiment)
+L = ['a', 'b', ['cc', 'dd', ['eee', 'fff']], 'g', 'h']
 
-for i in range(count - 1):
-    experiment.insert(2*i+1, (experiment[2*i] + experiment[2*i+1])/2)
+print(L[2])
+# Prints ['cc', 'dd', ['eee', 'fff']]
 
-print(experiment)
+print(L[2][2])
+# Prints ['eee', 'fff']
+
+print(L[2][2][0])
+# Prints eee
