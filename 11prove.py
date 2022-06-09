@@ -60,9 +60,10 @@ for i in range(len(yoi_list)):
         yoi_max = yoi_list[i][3]
         yoi_max_country = yoi_list[i][0]
 
+print()
 print(f'The overall minimum life expectancy is: {omin} from {omin_country} in {omin_year}\nThe overall maximum life expectancy is: {omax} from {omax_country} in {omax_year}')
-
-print(f'For the year {year}:\nThe average life expectancy across all countries was: {yoi_avg: .3f} years\nThe minimum life expectancy was in {yoi_min_country} at: {yoi_min} years\nThe maximum life expectancy was in {yoi_max_country} at: {yoi_max} years')
+print()
+print(f'For the year {year}:\n\nThe average life expectancy across all countries was: {yoi_avg: .3f} years\nThe minimum life expectancy was in {yoi_min_country} at: {yoi_min} years\nThe maximum life expectancy was in {yoi_max_country} at: {yoi_max} years')
 
 
 
