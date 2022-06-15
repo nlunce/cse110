@@ -1,7 +1,9 @@
-price = float(input('What is the price?: '))
+largest = 0
 
-payment = float(input('what is the payment?: '))
+for value in my_list:
 
-if payment > price:
-    change = payment- price
-    print (f'Your change is {change}')
+    if value < largest:
+
+        largest = value
+
+print(f"The largest is {largest}")
